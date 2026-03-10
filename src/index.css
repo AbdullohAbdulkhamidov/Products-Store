@@ -1,3 +1,13 @@
 body {
   margin: 0;
 }
+
+sup {
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+}

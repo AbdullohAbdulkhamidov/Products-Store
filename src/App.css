@@ -107,8 +107,12 @@ button:hover {
 .nav-ul li {
   color: #fff;
   padding: 1rem 2rem;
-  text-decoration: none;
   font-size: 1.2rem;
+}
+
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 

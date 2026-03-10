@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from "axios"
 import { Link, useParams } from 'react-router-dom'
 
-const ProductDetails = ({addToCart}) => {
+const ProductDetails = ({ addToCart }) => {
     const { id } = useParams()
     const [product, setProduct] = useState([])
 
@@ -45,11 +45,17 @@ const ProductDetails = ({addToCart}) => {
         }
     }
 
+    // When add to cart btn clicked
+    const [statusText, setStatusText] = useState("")
     function handleAdd() {
         addToCart(product, productAmount)
         setProductAmount(1)
-        const statusText = document.querySelector('.statusText') 
-        statusText.innerHTML = `${productAmount} products added successfully`
+
+        setStatusText(`${productAmount} products added successfully`)
+
+        setTimeout(() => {
+            setStatusText("")
+        }, 3000)
     }
 
     return (
@@ -78,7 +84,7 @@ const ProductDetails = ({addToCart}) => {
                             <button className='add-to-cart' onClick={(handleAdd)}>Add to Cart</button>
                         </div>
 
-                        <p className='statusText'></p>
+                        <p>{statusText}</p>
                     </div>
                 </div>
             </div>

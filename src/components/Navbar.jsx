@@ -9,7 +9,8 @@ const Navbar = ({ cart }) => {
                     <li><Link to='/products'>Products</Link></li>
                     <li>
                         <Link to='/cart'>
-                            Cart <sup>{cart.length ? cart.length : ''}</sup>
+                            Cart 
+                            <sup style={{ backgroundColor: cart.length>0 ? 'red' : 'coral' }}>{cart.length ? cart.length : ''}</sup>
                         </Link>
                     </li>
                 </ul>

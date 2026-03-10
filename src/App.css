@@ -1,3 +1,11 @@
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
 /* Products.jsx */
 .container {
   margin: 0 auto;
@@ -81,7 +89,7 @@ button:hover {
 
 
 /* Navbar.jsx */
-nav {
+.navbar {
   margin: 0;
   padding: 0;
   background-color: coral;
@@ -92,10 +100,48 @@ nav {
   justify-content: center;
   align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-ul li {
   color: #fff;
   padding: 1rem 2rem;
   text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+
+/* Cart */
+.add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-btn {
+  /* padding: 0.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.small-btns span:hover {
+  background-color: #c0c0c0;
+}
+
+.product-amount {
+  background-color: coral;
+}
+
+.product-amount:hover {
+  background-color: coral;
 }

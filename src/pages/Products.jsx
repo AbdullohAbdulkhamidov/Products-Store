@@ -7,7 +7,7 @@ const Products = (props) => {
     return (
         <>
             <div className="container">
-                <h1 className='title'>Welcome to My Store</h1>
+                <h1 className='title'>All Products</h1>
 
                 <ul className="products-box">
                     {
